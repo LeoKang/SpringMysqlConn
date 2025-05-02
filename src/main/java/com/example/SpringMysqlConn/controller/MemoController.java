@@ -1,5 +1,6 @@
 package com.example.SpringMysqlConn.controller;
 
+import com.example.SpringMysqlConn.MemoRepository;
 import com.example.SpringMysqlConn.dto.Memo;
 import com.example.SpringMysqlConn.service.MemoService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,6 +15,10 @@ public class MemoController {
 
     @Autowired
     private MemoService memoService;
+
+//    public MemoController(MemoService memoService) {
+//        this.memoService = memoService;
+//    }
 
     @GetMapping("/list")
     public String list(Model model) {
