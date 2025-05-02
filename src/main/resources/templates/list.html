@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>List</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+    <div>List</div>
+    <ul th:each="memo: ${memoList}">
+        <li th:text="${memo.id}"></li>
+        <li th:text="${memo.memoText}"></li>
+    </ul>
+</body>
+</html>
